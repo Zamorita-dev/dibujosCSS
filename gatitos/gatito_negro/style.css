@@ -17,7 +17,6 @@
 .cat {
   width: 500px;
   height: 600px;
-  border: 1px solid black;
   display: grid;
   grid-template: repeat(5, 20%) / repeat(5, 20%);
 }
@@ -136,6 +135,8 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom: 10px solid white;
+  background: var(--body);
+  z-index: 1;
 }
 .hand_right {
   width: 160px;
@@ -146,7 +147,24 @@
   border-bottom-right-radius: 20px;
   border-bottom-color: white;
   border-bottom: 10px solid white;
+  background: var(--body);
+  z-index: 1;
 }
+.carrot {
+  width: 42px;
+  height: 100px;
+  margin-left: 25px;
+  background: orange;
+  transform: rotate(30deg);
+  grid-column: 3;
+  grid-row: 4;
+  z-index: 0;
+  border-bottom-left-radius: 91px;
+  border-bottom-right-radius: 75px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
 .foot {
   width: 290px;
   height: 60px;
@@ -157,4 +175,15 @@
   background-color: var(--body);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+}
+.carrot_green {
+  width: 10px;
+  height: 40px;
+  background: green;
+  grid-column: 4;
+  grid-row: 4;
+  z-index: 0;
+  transform: rotate(30deg);
+  margin-left: -30px;
+  margin-top: -25px;
 }
